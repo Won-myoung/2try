@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      /* width: 100%; */
+      /* max-width: 90vw; */
+      max-width: 650px;
+      max-height: 100%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+    }
+
+    swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    body {
+      background: #000;
+      color: #000;
+    }
+
+    .mySwiper {
+      /* height: 80%; */
+      width: 100%;
+    }
+
+    .mySwiper2 {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper2 swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper2 .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    swiper-slide img {
+      /* display: sw </swiper-slidek; */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    
+    .hidden-cover {
+      display: none;
+    }
+
+    .slide-cover:hover{
+        background-color: #000;
+    }
+    .slide-cover:hover .slide-img {
+        display: none;
+    }
+    
+    .slide-cover:hover .hidden-cover {
+        display: block;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+    thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true">
+    <swiper-slide class="slide-cover">
+      <img class="slide-img" src="./img/visual011.jpg" />
+      <div class="hidden-cover">
+        <img src="./img/visual01.png" />
+      </div>
+    </swiper-slide>
+    <swiper-slide class="slide-cover">
+        <img class="slide-img" src="./img/visual022.png" />
+        <div class="hidden-cover">
+          <img src="./img/visual02.png" />
+        </div>
+    </swiper-slide>
+    <swiper-slide class="slide-cover">
+      <img class="slide-img" src="./img/visual055.png" />
+      <div class="hidden-cover">
+        <img src="./img/visual05.png" />
+      </div>
+    </swiper-slide>
+    <swiper-slide class="slide-cover">
+      <img class="slide-img" src="./img/visual044.jpg" />
+      <div class="hidden-cover">
+        <img src="./img/visual04.png" />
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+    watch-slides-progress="true">
+    <swiper-slide>
+      <img class="hover-effect nav-image" src="./img/visual011.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img class="hover-effect nav-image" src="./img/visual022.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img class="hover-effect nav-image" src="./img/visual055.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img class="hover-effect nav-image" src="./img/visual044.jpg" />
+    </swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+
+
+
+
+  </script>
+
+</body>
+
+</html>
